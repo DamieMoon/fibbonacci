@@ -1,6 +1,6 @@
 // Golden ratio everywhere :D
 fn main() {
-    println!("{:?}\n", fibbonacci_seq(10)) // Put your number of choice here, don't explode your computer
+    println!("{:?}\n", fibbonacci_seq(10)) // Put your number of choice here, don't explode your computer, this is recursive.
 }
 
 fn fibbonacci (num: u128) -> u128 {
@@ -21,6 +21,6 @@ fn fibbonacci_seq (size: u128) -> Vec<u128> {
         series.push(fibbonacci(i));
         i += 1;
     }
-    println!("\nNumbers crunched: {:?}\nTime taken: {:.2?}\n", size, now.elapsed());
+    println!("\nNumbers crunched recursively: {:?}\nTime taken: {:.2?}\n", size, now.elapsed());
     series
 }
